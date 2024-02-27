@@ -1,5 +1,6 @@
 // Calcola il tempo trascorso in secondi dall'inizio della sessione,
-//recupera il valore del tempo trascorso da sessionStorage. Se non è presente, lo inizializza a 0.
+//recupera il valore del tempo trascorso da sessionStorage.
+//Se non è presente un valore di tempo in sessionStorege, lo inizializza a 0.
 function getPassedTime() {
   let passedTime = sessionStorage.getItem("passedTime");
   if (!passedTime) {
@@ -17,8 +18,7 @@ function updateCounter() {
   sessionStorage.setItem("passedTime", passedTime);
   document.getElementById("counter").innerText = passedTime + "s";
 }
-//esegue la funzione aggiornaContatore ogni secondo
+//esegue la funzione updateCounter ogni secondo
 setInterval(updateCounter, 1000);
 
-// Imposta il valore iniziale del contatore
 updateCounter();
