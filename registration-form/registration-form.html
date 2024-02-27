@@ -7,13 +7,18 @@
     <title>LocalStorage Form Exercise</title>
   </head>
   <body>
+    <canvas id="confetti"></canvas>
     <form>
-      <input type="text" id="name" placeholder="Type your name" required />
-      <button id="save">Save</button>
-      <button id="remove">Remove</button>
-      <h3>Welcome <span id="savedName"></span></h3>
+      <h1>Type in your name</h1>
+      <h2 id="savedName"></h2>
+      <input type="text" id="name" placeholder="Your Name" required />
+      <div id="BTNs">
+        <button id="save">Save</button>
+        <button id="remove">Remove</button>
+      </div>
     </form>
 
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
     <script src="./registration.form.js"></script>
   </body>
 </html>

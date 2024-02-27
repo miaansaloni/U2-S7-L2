@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+p {
+  color: #17d4fe;
+  font-size: 60px;
+  font-family: Orbitron;
+  letter-spacing: 7px;
+}
+#counter {
+  color: #17d4fe;
+  font-size: 60px;
+  font-family: Orbitron;
+  letter-spacing: 7px;
+}

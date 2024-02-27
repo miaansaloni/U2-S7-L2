@@ -15,7 +15,7 @@ function updateCounter() {
   let passedTime = getPassedTime();
   passedTime++;
   sessionStorage.setItem("passedTime", passedTime);
-  document.getElementById("counter").innerText = passedTime;
+  document.getElementById("counter").innerText = passedTime + "s";
 }
 //esegue la funzione aggiornaContatore ogni secondo
 setInterval(updateCounter, 1000);

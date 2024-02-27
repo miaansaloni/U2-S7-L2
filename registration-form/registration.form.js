@@ -21,7 +21,7 @@ function removeName() {
 //Aggiorna l'area del nome salvato con il valore presente in localStorage
 function showSavedName() {
   const savedName = getSavedName();
-  savedNameEl.innerText = savedName ? `${savedName}!` : "";
+  savedNameEl.innerText = savedName ? `Welcome ${savedName}!` : "";
 }
 
 saveBTN.addEventListener("click", saveName);
